@@ -121,7 +121,7 @@ main {
 }
 
 .hero-copy {
-  max-width: 650px;
+  max-width: 600px;
 }
 
 .eyebrow {
@@ -141,8 +141,9 @@ p {
 
 h1 {
   margin-bottom: 18px;
-  font-size: clamp(38px, 6vw, 74px);
-  line-height: 1.02;
+  max-width: 560px;
+  font-size: clamp(44px, 5.2vw, 82px);
+  line-height: 1.04;
   letter-spacing: 0;
 }
 
@@ -506,7 +507,9 @@ h2 {
   }
 
   h1 {
-    font-size: 40px;
+    max-width: 100%;
+    font-size: 42px;
+    line-height: 1.12;
   }
 
   .hero-copy > p:not(.eyebrow),
