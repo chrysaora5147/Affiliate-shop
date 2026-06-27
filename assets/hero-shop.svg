@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-label="โต๊ะเขียนนิยายพร้อมพัสดุและของใช้">
+  <rect width="720" height="560" rx="34" fill="#fff2df"/>
+  <path d="M72 386h576" stroke="#28221f" stroke-width="34" stroke-linecap="round"/>
+  <rect x="118" y="132" width="250" height="292" rx="20" fill="#ffffff" stroke="#28221f" stroke-width="8"/>
+  <path d="M156 186h168M156 228h132M156 270h150M156 312h94" stroke="#c4b2a5" stroke-width="13" stroke-linecap="round"/>
+  <path d="M420 232h112l50 62v108H420z" fill="#f6c969" stroke="#28221f" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M532 232v62h50" fill="none" stroke="#28221f" stroke-width="8" stroke-linejoin="round"/>
+  <rect x="450" y="332" width="98" height="26" rx="13" fill="#d75e72"/>
+  <circle cx="506" cy="144" r="52" fill="#5f917b" stroke="#28221f" stroke-width="8"/>
+  <path d="M486 146c18-30 50-26 50 4 0 28-32 42-50 10" fill="none" stroke="#fffaf2" stroke-width="10" stroke-linecap="round"/>
+  <path d="M198 424l-28 76M552 424l32 76" stroke="#28221f" stroke-width="10" stroke-linecap="round"/>
+  <rect x="226" y="390" width="104" height="36" rx="18" fill="#d75e72"/>
+  <path d="M250 407h56" stroke="#fffaf2" stroke-width="8" stroke-linecap="round"/>
+</svg>

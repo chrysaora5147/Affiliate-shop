@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="มุมช้อปเล็กๆ สำหรับสนับสนุนนักเขียนผ่าน Shopee affiliate links" />
+    <title>Soft Finds | ของน่ารักที่ช่วยซัพพอร์ตนักเขียน</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="กลับหน้าแรก">
+        <span class="brand-mark">W</span>
+        <span>
+          <strong>Soft Finds</strong>
+          <small>เลื่อนดูของเพลินๆ แล้วค่อยกดอันที่ชอบ</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="เมนูหลัก">
+        <a href="#feed">ฟีด</a>
+        <a href="#about">บอกไว้ก่อน</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">เปิดไว้เลื่อนเล่นหลังอ่านนิยายจบ</p>
+          <h1 id="hero-title">ของกระจุกกระจิกน่ารักๆ ที่ช่วยต่อไฟให้ตอนถัดไป</h1>
+          <p>
+            ไม่ใช่ร้านค้าใหญ่โต แค่ฟีดรวมของที่น่าหยิบ น่าใช้ น่าเก็บไว้บนโต๊ะ
+            ถ้ามีอันไหนถูกใจแล้วกดไป Shopee ผ่านลิงก์นี้
+            เราอาจได้ค่าขนมเล็กๆ โดยคุณจ่ายราคาเดิม
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#feed">เริ่มเลื่อนดู</a>
+            <button class="ghost-action" id="copyPostButton" type="button">คัดลอกแคปชันลง X</button>
+          </div>
+        </div>
+        <div class="hero-board" aria-label="ตัวอย่างฟีดของน่ารัก">
+          <div class="mini-pin tall"><img src="./assets/lamp.svg" alt="โคมไฟ" /></div>
+          <div class="mini-pin"><img src="./assets/stickers.svg" alt="สติกเกอร์" /></div>
+          <div class="mini-pin wide"><img src="./assets/notebook.svg" alt="สมุด" /></div>
+          <div class="mini-pin"><img src="./assets/tumbler.svg" alt="แก้ว" /></div>
+          <div class="mini-pin tall"><img src="./assets/tote.svg" alt="กระเป๋าผ้า" /></div>
+        </div>
+      </section>
+
+      <section class="notice" aria-label="คำอธิบาย affiliate">
+        <strong>บอกไว้ตรงนี้:</strong>
+        ลิงก์สินค้าบางรายการเป็น affiliate link หากคุณซื้อผ่านลิงก์นี้
+        เราอาจได้รับค่าคอมมิชชัน โดยราคาสินค้าของคุณไม่เพิ่มขึ้น
+      </section>
+
+      <section class="toolbar" aria-label="ตัวกรองฟีด">
+        <label class="search-box">
+          <span>อยากหาอะไร</span>
+          <input id="searchInput" type="search" placeholder="เช่น สมุด, โคมไฟ, ของแต่งโต๊ะ" />
+        </label>
+
+        <div class="segmented" role="tablist" aria-label="หมวดหมู่สินค้า" id="categoryTabs"></div>
+
+        <label class="sort-box">
+          <span>เรียง</span>
+          <select id="sortSelect">
+            <option value="recommended">แนะนำก่อน</option>
+            <option value="low">ราคาต่ำไปสูง</option>
+            <option value="high">ราคาสูงไปต่ำ</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="product-section" id="feed" aria-labelledby="products-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ฟีดสุ่มของน่ารัก</p>
+            <h2 id="products-title">เลื่อนไปเรื่อยๆ เดี๋ยวของใหม่ก็ขึ้นมา</h2>
+          </div>
+          <p id="resultCount"></p>
+        </div>
+        <div class="masonry-feed" id="productGrid"></div>
+        <button class="load-more" id="loadMoreButton" type="button">สุ่มของเพิ่ม</button>
+        <p class="empty-state" id="emptyState" hidden>ไม่เจอสินค้าที่ตรงกับคำค้น ลองเปลี่ยนคำดูนะ</p>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow">ความสบายใจต้องมาก่อน</p>
+          <h2 id="about-title">ไม่มีแรงกดดัน ไม่มีขั้นต่ำ</h2>
+        </div>
+        <p>
+          เว็บนี้เป็นแค่หน้ารวมลิงก์ของที่เราคัดไว้ ถ้ามีของที่อยากซื้ออยู่แล้วค่อยกดก็พอ
+          หากซื้อผ่านลิงก์ Shopee ของเรา เราอาจได้ค่าคอมมิชชันเล็กน้อยจากแพลตฟอร์ม
+          คุณยังจ่ายราคาเดิม ได้ของเหมือนเดิม และเลือกข้ามได้ตลอด
+        </p>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">คัดลอกแล้ว</div>
+
+    <footer class="site-footer">
+      <span>Soft Finds</span>
+      <span>เลื่อนเจอของที่ชอบค่อยกดก็พอ</span>
+    </footer>
+
+    <script src="./products-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
